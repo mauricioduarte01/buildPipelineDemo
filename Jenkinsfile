@@ -35,9 +35,9 @@ pipeline {
 			      steps {
                 echo 'Pushing image to Docker Hub'
                 sh 'docker images'
-                sh 'docker tag jupyter-travis malditobastardo/pipeline-demo'
+                sh 'docker tag jupyter-travis malditobastardo/pipe-demo'
 				        sh 'docker images'
-                sh 'docker push malditobastardo/pipeline-demo:latest'
+                sh 'docker push malditobastardo/pipe-demo:latest'
                 echo 'Push Stage Complete'
 			}
 		}
